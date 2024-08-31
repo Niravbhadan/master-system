@@ -1,0 +1,158 @@
+@import '../../../style/main.scss';
+
+.qhse-carrer-section {
+    background-color: var(--theme-qhse-career-bgcolor);
+    padding: 32px 0;
+
+    .company-qhse-career-title {
+        @media (max-width :768px) {
+            padding: 30px 10px 15px 10px;
+        }
+
+        span {
+            @include font12;
+            color: var(--theme-dim-gray-color);
+            display: block;
+            padding: 0 0 5px 0;
+        }
+
+        .company-qhse-career-title-flex {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 4px solid var(--theme-black-color);
+            padding-bottom: 35px;
+
+            @media (max-width :768px) {
+                border-bottom: 2px solid var(--theme-black-color);
+            }
+
+            h2 {
+                @include heading2;
+
+                @media (max-width :768px) {
+                    @include font34;
+                }
+            }
+
+            .company-qhse-career-title-flex-border {
+                border: 2px solid var(--theme-black-color);
+                border-radius: 50px;
+
+                p {
+                    padding: 8px 24px;
+                    @include font24;
+
+                    @media (max-width :768px) {
+                        @include font16;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.company-qhse-career-subgrid {
+    display: grid;
+    grid-template-columns: 1fr 140px;
+    gap: 80px;
+    align-items: center;
+}
+
+.company-qhse-career-details-grid {
+    display: grid;
+    grid-template-columns: 512px 1fr;
+    gap: 32px;
+    padding: 50px 0;
+
+
+    @media (max-width :768px) {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 15px;
+        padding: 15px 0;
+    }
+
+    .company-qhse-career-details-grid-img {
+        height: 380px;
+        width: 100%;
+
+        img {
+            display: block;
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+    .company-qhse-career-details-grid-details {
+        @media (max-width :768px) {
+            padding: 0px 10px 15px 10px;
+        }
+
+        h4 {
+            @include font18;
+            font-weight: 700;
+            padding-bottom: 20px;
+        }
+
+        p {
+            @include font18;
+            font-weight: 300;
+            color: var(--theme-dim-gray-color);
+            padding-bottom: 30px;
+            line-height: 30px;
+
+            @media (max-width :768px) {
+                @include font16;
+                font-weight: 300;
+                line-height: 20px;
+            }
+        }
+
+        .company-qhse-career-details-grid-details-icon {
+            border-bottom: 2px solid var(--theme-black-color);
+            padding: 0 0 30px 0;
+
+            img {
+                width: 30px;
+                height: 30px;
+                display: block;
+            }
+        }
+    }
+}
+
+.company-herobanner-circal {
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+
+    .company-herobanner-circal-border {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid var(--theme-black-color);
+        border-radius: 50%;
+        width: 140px;
+        height: 140px;
+        position: relative;
+        overflow: hidden;
+
+        span {
+            @include font18;
+            color: var(--theme-black-color);
+            padding-right: 10px;
+        }
+
+        svg {
+            path {
+                stroke: var(--theme-black-color)
+            }
+        }
+
+        p {
+            @include font18;
+            color: var(--theme-black-color);
+        }
+    }
+}

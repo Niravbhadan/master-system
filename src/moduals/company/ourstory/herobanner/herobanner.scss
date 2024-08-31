@@ -1,0 +1,100 @@
+@import "../../../../style/main.scss";
+
+.herobanner-img{
+    background-image: url(../../../../assests/images/ourstory-banner.png);
+    height: 711px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    .herobanner-flex{
+        width: 100%;
+        .herobanner-items{
+            @media (max-width: 768px) {
+                padding: 0 20px;
+            }
+            h1{
+                @include heading1;
+                color: var(--theme-white-color);
+                margin: 150px 0 0 0;
+                @media (max-width: 768px) {
+                    margin: 150px 0 0 0;
+                    font-size: 64px;
+                }
+            }
+            .herobanner-information{
+                display: grid;
+                grid-template-columns: 20px 1fr;
+                align-items: center;
+                gap: 10px;
+                .herobanner-dot{
+                    height: 18px ;
+                    width: 18px;
+                    background-color: var(--theme-primary-color);
+                    border-radius: 50px;
+                }
+                p{
+                    @include font18;
+                    font-weight: 300;
+                    color: var(--theme-white-color);
+                    max-width: 490px;
+                    @media (max-width: 768px) {
+                        @include font16;
+                        font-weight: 300;
+                        max-width: 300px;
+                        line-height: 22px;
+                    }
+                }
+            }
+            .herobanner-circal{
+                display: flex;
+                justify-content: flex-end;
+                .herobanner-circal-border{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border: 2px solid var(--theme-white-color);
+                    border-radius: 50%;
+                    width: 140px;
+                    height: 140px;
+                    position: relative;
+                    overflow: hidden;
+                    transition: .9s ease-in-out;
+                    &:hover{
+                        border: 2px solid var(--theme-primary-color);
+                        .herobanner-circal-animation{
+                            transform: translateY(0%);
+                            border: 2px solid var(--theme-primary-color);   
+                        }
+                    }
+                    span{
+                        @include font18;
+                        color: var(--theme-white-color);
+                    }
+                    p{
+                        @include font18;
+                        color: var(--theme-white-color);
+                    }
+                    @media (max-width: 768px) {
+                        display: none;
+                    }
+                    .herobanner-circal-animation{
+                        width: 140px;
+                        height: 140px;
+                        background-color: var(--theme-primary-color);
+                        border-radius: 50%;
+                        position: absolute;
+                        transform: translateY(100%);
+                        transition: .5s ease-in-out;
+                    }
+                    .herobanner-circal-animation-two{
+                        position: absolute;
+                        color: var(--theme-white-color);    
+                    }
+                }
+            }
+        }
+    }
+}

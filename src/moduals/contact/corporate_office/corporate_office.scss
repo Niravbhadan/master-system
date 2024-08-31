@@ -1,0 +1,71 @@
+@import '../../../style/main.scss';
+
+.office-information-grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 0;
+    .office-information-item{
+        background-color: var(--theme-gray-color);
+        padding: 60px;
+        .office-leftcontent{
+            max-width: 457px;
+            margin: 0 auto;
+            h6{
+                @include font34;
+                font-style: normal;
+                color: var(--theme-black-light-color);
+                margin: 0 0 28px;
+                letter-spacing: 0;
+            }
+            .office-information-location{
+                padding: 0 0 12px;
+                border-bottom: 1px solid #000;
+                h5{
+                    @include font18;
+                    font-style: normal;
+                    line-height: normal;
+                    font-weight: 700;
+                    color: var(--theme-black-light-color);
+                    letter-spacing: 0;
+                    margin: 0 0 12px;
+                }
+                p{
+                    @include font18;
+                    font-style: normal;
+                    line-height: normal;
+                    font-weight: 300;
+                    color: var(--theme-black-secend-color);
+                    max-width: 324px;
+                    letter-spacing: 0;
+                }
+            }
+            .office-information-alignment{
+                display: flex;
+                justify-content: space-between;
+                padding: 12px 0 0;
+                a{
+                    display: block;
+                    padding: 0 0 4px;
+                    @include font18;
+                    font-style: normal;
+                    line-height: normal;
+                    font-weight: 300;
+                    color: var(--theme-black-light-color);
+                    cursor: pointer;
+                    letter-spacing: 0;
+                    text-decoration: none;
+                    span{
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+    }
+    .office-information-item-two{
+        background-color: var(--theme-primary-color);
+        display: flex;
+        align-items: center;
+        padding: 60px;
+        
+    }
+}

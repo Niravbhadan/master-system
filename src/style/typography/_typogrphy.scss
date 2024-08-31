@@ -1,0 +1,49 @@
+
+@mixin font16{
+    font-family: "Outfit", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+}
+@mixin font18{
+    font-family: "Outfit", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+@mixin font12{
+    font-family: "Outfit", sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+}
+@mixin font20{
+    font-family: "Outfit", sans-serif;
+    font-size: 20px;
+    font-family: 500;
+    
+}
+@mixin heading1{
+    font-family: "Outfit", sans-serif;
+    font-size: 120px;
+    font-weight: 400;
+    letter-spacing: -5px;
+}
+
+@mixin heading2{
+    font-family: "Outfit", sans-serif;
+    font-size: 64px;
+    font-weight: 500;
+}
+
+@mixin font24{
+    font-family: "Outfit", sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 41px;
+}
+
+@mixin font34{
+    font-family: "Outfit", sans-serif;
+    font-size: 34px;
+    font-weight: 500;
+    line-height: 44px;
+}

@@ -1,0 +1,96 @@
+@import '../../../style/main.scss';
+
+.company-achievements {
+    padding: 60px 0;
+}
+
+.story-title {
+    @media (max-width :768px) {
+        padding: 30px 10px 15px 10px;
+    }
+
+    span {
+        @include font12;
+        color: var(--theme-dim-gray-color);
+        display: block;
+        padding: 0 0 5px 0;
+    }
+
+    .story-title-flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 4px solid var(--theme-black-color);
+        padding-bottom: 35px;
+
+        @media (max-width :768px) {
+            border-bottom: 2px solid var(--theme-black-color);
+        }
+
+        h2 {
+            @include heading2;
+
+            @media (max-width :768px) {
+                @include font34;
+            }
+        }
+
+        .story-title-flex-border {
+            border: 2px solid var(--theme-black-color);
+            border-radius: 50px;
+
+            p {
+                padding: 8px 24px;
+                @include font24;
+
+                @media (max-width :768px) {
+                    @include font16;
+                }
+            }
+        }
+    }
+}
+
+.achievements-certificate-detailes {
+    padding-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+
+    .achivements-certificate-image {
+        width: 100%;
+        height: 490px;
+
+        img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .achivements-certificate-detailes {
+        padding-top: 30px;
+        h2{
+            @include font18;
+            font-weight: 700;
+            margin-bottom: 16px
+        }
+        p{
+            @include font18;
+            font-weight: 300;
+            max-width: 630px;
+        }
+        .wave-img {
+            border-bottom: 2px solid var(--theme-black-color);
+            padding: 0 0 30px 0;
+            width: 100%;
+
+            img {
+                width: 30px;
+                height: 30px;
+                display: block;
+            }
+        }
+    }
+}
